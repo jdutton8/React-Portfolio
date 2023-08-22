@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import AboutMe from './pages/AboutMe'
+import Home from './pages/Home'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import Resume from './pages/Resume'
@@ -14,7 +14,7 @@ function App() {
   const DisplaySwitch = (state) => {
     switch (state) {
       case '':
-        return <AboutMe setDisplayState = { setDisplayState } />
+        return <Home setDisplayState = { setDisplayState } />
       case 'projects':
         return <Projects />
       case 'contact':
@@ -22,7 +22,7 @@ function App() {
       case 'resume':
         return <Resume />
       default:
-        return <AboutMe />
+        return <Home />
     }
   }
 
